@@ -1,0 +1,110 @@
+@media screen and (max-width: 1214px) {
+  #home::before {
+    height: 88%;
+  }
+  #client-section::before {
+    height: 54%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #services {
+    flex-direction: column;
+  }
+  #clients img {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 866px) {
+  #clients img {
+    height: 70px;
+  }
+}
+
+
+
+/* For Phone  */
+
+@media screen and (max-width: 680px) {
+  /* naigation */
+  #logo img{
+    height: 40px;
+    margin: 2px 5px;
+  }
+
+  #navbar::before {
+    height: 110%;
+  }
+  #navbar {
+    flex-direction: column;
+  }
+  #navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 15px;
+  }
+
+  /* Home Section  */
+  #home {
+    height: 340px;
+    padding: 3px 21px;
+    /* flex-direction: column; */
+  }
+  #home::before {
+    height:70% ;
+  }
+  
+  #home p{
+    font-size: 1rem;
+    padding: 3px 10px;
+  }
+
+  /* Services Section  */
+  #services .box {
+    /* padding: 5px 0px;
+    margin: 9px 0px; */
+  }
+  #services .box img{
+    height: 100px;
+  }
+
+  /* Clients Section  */
+  #clients{
+    flex-wrap: wrap;
+    
+
+  }
+  #clients img{
+    width: 66px;
+    padding: 2px 20px;
+
+  }
+
+  /* Conatact Section  */
+  #contact-box form{
+    width: 80%;
+  }
+
+  /* Footer  */
+  /* Utility class */
+  .h-primary{
+    font-size: 1.8rem;
+  }
+  .btn{
+    padding: 6px 8px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:268px){
+
+  /* body{
+    background-color: red;
+  } */
+  #navbar ul li a {
+    font-size: 0.7rem;
+    padding: 0px 7px;
+  }
+  .center{
+    margin: 0px;
+  }
+  
+}
