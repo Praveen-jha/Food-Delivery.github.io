@@ -3,12 +3,15 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* Navigation Bar */
 #navbar {
   display: flex;
-    align-items: center;
-    position: relative;
-    
+  align-items: center;
+  position: sticky;
+  top: 0;
 }
 /* Navigation Bar : Logo and image  */
 #logo {
@@ -28,15 +31,14 @@
   font-family: "Ubuntu", sans-serif;
   /* font-family: 'Baloo Bhaina 2', cursive; */
 }
-.burger{
-  display:none;
+.burger {
+  display: none;
   position: absolute;
   right: 7px;
   top: 15px;
   cursor: pointer;
-
 }
-.line{
+.line {
   width: 33px;
   background-color: white;
   height: 4px;
@@ -69,7 +71,6 @@
 #navbar ul li a:hover {
   color: black;
   background-color: white;
-
 }
 
 /* Home section  */
@@ -113,10 +114,10 @@
 #services .box {
   /* border: 2px solid brown; */
   border: 2px solid brown;
-    padding: 5px 5px;
-    margin: 4px 5px;
-    border-radius: 15px;
-    background-color: #f2f2f2;
+  padding: 5px 5px;
+  margin: 4px 5px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
 }
 #services .box img {
   height: 180px;
@@ -125,82 +126,69 @@
   margin: 2px auto;
   object-fit: cover;
 }
-#services .box p{
+#services .box p {
   font-family: "Ubuntu", sans-serif;
 }
 
-
 /* Clients Section */
 
-#client-section{
+#client-section {
   /* height: 344px; */
   /* position: relative; */
-  
-
 }
-#client-section::before{
- content: "";
- position: absolute;
- background: url('img/bg.jpeg')no-repeat center center/cover;
- width: 100%;
- height: 44%;
- z-index: -1;
- opacity: 0.5;
-  
-
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("img/bg.jpeg") no-repeat center center/cover;
+  width: 100%;
+  height: 44%;
+  z-index: -1;
+  opacity: 0.5;
 }
-#clients{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#clients img{
-   height: 124px;
-
+#clients img {
+  height: 124px;
 }
-.client-item{
+.client-item {
   padding: 23px;
-
 }
-
 
 /* contact section  */
-#contact{
-  
+#contact {
   position: relative;
-  
 }
-#contact::before{
+#contact::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
   opacity: 0.7;
-  background: url('img/contact.jpg') no-repeat center center/cover;
-
+  background: url("img/contact.jpg") no-repeat center center/cover;
 }
-#contact-box form{
+#contact-box form {
   width: 40%;
 }
-#contact-box label{
+#contact-box label {
   font-size: 1.3rem;
   font-family: "Ubuntu", sans-serif;
 }
-#contact-box{
+#contact-box {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 34px;
 }
 #contact-box input,
-#contact-box textarea{
+#contact-box textarea {
   width: 100%;
   padding: 0.5rem;
   border-radius: 9px;
   font-size: 1.1rem;
-
 }
 
 /* Utility Classes */
@@ -208,7 +196,7 @@
   font-size: 2.8rem;
   padding: 12px;
   align-items: center;
- 
+
   font-family: "Bree Serif", serif;
 }
 .h-secondary {
@@ -229,5 +217,4 @@
 .center {
   text-align: center;
   margin: 25px;
- 
 }
